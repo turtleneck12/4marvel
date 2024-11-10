@@ -1,0 +1,72 @@
+/* 기본 스타일 설정 */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* 컨테이너 스타일 */
+.container {
+  text-align: center;
+  width: 100%;
+  max-width: 1200px;
+  padding: 20px;
+}
+
+/* 헤더 스타일 */
+header h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+/* 주차 공간 스타일 */
+.parking-lot {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 20px;
+  justify-content: center;
+}
+
+.parking-space {
+  width: 200px;
+  height: 100px;
+  background-color: gray;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 1rem;
+  position: relative;
+}
+
+.parking-space p:first-child {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+/* 반응형 디자인 */
+@media screen and (max-width: 600px) {
+  .parking-lot {
+    grid-template-columns: 1fr;
+  }
+
+  header h1 {
+    font-size: 1.5rem;
+  }
+
+  .parking-space {
+    width: 90%;
+    height: 80px;
+  }
+}
