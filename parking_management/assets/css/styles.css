@@ -14,6 +14,17 @@ body {
   height: 100vh;
 }
 
+/* 상단 헤더 박스 스타일 */
+.header-box {
+  width: 100%;
+  background-color: #007BFF; /* 파란색 */
+  color: white;
+  padding: 20px;
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+a
 /* 컨테이너 스타일 */
 .container {
   text-align: center;
